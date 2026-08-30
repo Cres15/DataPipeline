@@ -1,3 +1,9 @@
+SQLite
+
+•Role and ETL Contribution: a serverless and self-contained SQL database that stores data in a local file. In the ETL process, it is mainly used during the Load phase, where the processed data is stored locally for use by the system.   
+•Advantages: SQLite is highly portable and does not require a separate backend server or complicated configuration. It supports standard SQL queries and ACID-compliant transactions, making it useful for simple and fast system development.
+•Trade-offs: SQLite is not designed for distributed systems or applications with many simultaneous write operations. Its performance may be affected when multiple users or tasks try to update the database at the same time.
+
 Jupyter Notebook & Matplotlib
 - Role & ETL Contribution: An interactive development environment and visualization toolkit. While not used in the automated production run, they serve as the crucial Development layer where the pipeline's extraction and loading logic is prototyped and visually validated.
 -	Advantages: Enables step-by-step code execution and immediate visual feedback through charts, allowing you to instantly spot errors and verify data integrity before handing the workflow over to Airflow.
